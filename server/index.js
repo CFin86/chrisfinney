@@ -49,4 +49,4 @@ app.use('/api', api);
 app.get('*', function (req, res) {
 	res.sendfile('./client/index.html');
 });
-app.listen(process.env.PORT || 3000);
+app.listen(3000);
