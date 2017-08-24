@@ -16,8 +16,8 @@ var api = require('./api');
 var prerender = require('prerender-node');
 
 prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
-prerender.set('prerenderToken', process.env.PRERENDER_TOKEN);
-
+prerender.set('prerenderToken', 'Y2lj08lEV2mHIMOnxu');
+// app.use(require('prerender-node').set('prerenderToken', 'Y2ljUX08lEV2mHIMOnxu'));
 
 app.use(express.static(clientPath));
 app.use(bodyParser.json());
