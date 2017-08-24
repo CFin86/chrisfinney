@@ -17,6 +17,9 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 },
                 'sidenav@welcome': {
                     templateUrl: 'views/sidenav.html'
+                },
+                'footer': {
+                    templateUrl: 'views/mainFooter.html'
                 }
             }
         })

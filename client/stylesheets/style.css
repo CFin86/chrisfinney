@@ -408,7 +408,7 @@ h2.name, h4.title {
 } 
 #avatar{
   border-radius: 100% !important;
-  height: 15rem !important;
+  height: 26% !important;
   width: 40% !important;
   border: #7EA6A6 3px solid;
   margin-left: 1rem;
@@ -700,7 +700,7 @@ h2.name, h4.title {
 #carousel div.prev {
   z-index: -1;
   left: 30%;
-  transform: translateY(50px) translateX(-50%);
+  transform: translateY(5rem) translateX(-50%);
 }
 #carousel div.prev img {
   border-radius: 10px;
@@ -724,10 +724,10 @@ h2.name, h4.title {
 #carousel div.next {
   z-index: -2;
   left: 70%;
-  transform: translateY(50px) translateX(-50%);
+  transform: translateY(5rem) translateX(-50%);
 }
 #carousel div.next img {
-  width:17.2rem; 
+  width:10.2rem; 
   border-radius: 10px;
 }
 #carousel div.nextRightSecond {
