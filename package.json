@@ -4,6 +4,7 @@
   "description": "myportfolio",
   "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "source .variables && nodemon"
   },
   "author": "",
