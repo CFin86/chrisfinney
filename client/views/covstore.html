@@ -1,0 +1,216 @@
+<div class="container-fluid text-center">
+    <div class="row content">
+        <br>
+        <div class="col-sm-4 sidenav">
+            <div ui-view="sidenav"> </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-8">
+                <h3 id="title">Covalence Store</h3>
+                <h3 class="profileH3">The CHALLENGE</h3>
+                <article>
+                    <p class="profileP2">You will receive mockups produced by a graphic designer. </p>
+                    <p class="profileP2"> This site will have the following reqiurements: </p>
+                    <p class="profileP2">Must be Responsive (look good on mobile and desktop)</p>
+                    <p class="profileP2"> A <strong>Product List page </strong>- Shows tiles of product images, along with title, short description,
+                        and price. </p>
+                    <p class="profileP2"> <strong>Contact Us Page </strong> - Should have a form where people can input their name, email, and
+                        a message.
+                    </p>
+                    <p class="profileP2"> You should use <strong>SendGrid's API</strong> to email yourselves in response to this form being filled
+                        out.
+                    </p>
+                    <p class="profileP2">Use <strong>Stripe</strong> - Should have fields for email, card number, CVC, expiration, and billing
+                        zip code. </p>
+                    <p class="profileP2"> Should send an email to the customer thanking them for their purchase, complete with the title of the
+                        item they. </p>
+                    <p class="profileP2"> purchased and the amount. </p>
+                    <p class="profileP2"> A navbar at the top of the site. </p>
+                </article>
+                <a class="click" href="https://github.com/gvonhagel/FS-SP17-GProject1/blob/master/README.md"> A full description of the challenge may be viewed here. </a>
+            </div>
+            <div class="col-sm-8">
+                <h3 class="portfolioH3">Getting Started </h3>
+                <a class="gallery-item" data-toggle="modal" data-target="#startModal">
+                <img src="./img/screenshots/storefront.png" alt="post img"  title="Enlarge" class="pull-left img-responsive thumb margin10 img-thumbnail" style="cursor:zoom-in; margin-right: .25rem"></a>
+                <div>
+                    <p class="profileP2">
+                        This was a project that was assigned during the start of week 8 of 10 of <a class="click" href="https://covalence.io/"> Covalence Boot Camp</a>.
+                        When they announced the team leaders, and to my surprise, I was selected as one, I remember thinking
+                        to myself, “Well, this is it, everybody is about to find out exactly how little I know.” To my surprise,
+                        though, when we started, not only did we make awesome, incredibly quick progress, my team started
+                        asking me how<strong> I</strong> would approach problems. And even to my bigger surprise, <em> my solutions actually worked! </em>                        (sometimes) This was one of my first breakthrough moments of the famous
+                        <a class="click" href="https://en.wikipedia.org/wiki/Impostor_syndrome"> Imposter Syndrome.</a> I
+                        realized at the end of this project that I can do this. I can be a <a href="https://www.linkedin.com/in/cfin86/"> Full Stack Web Developer.</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <h3 class="portfolioH3">Responsive Design</h3>
+                <div class="mix category-a">
+                    <div>
+                        <a class="gallery-item" data-toggle="modal" data-target="#resdesModal">
+                            <img class="pull-right img-responsive-a thumb margin10 img-thumbnail" id="single-portfolio5" title="Enlarge" src="./img/screenshots/responsive.png"  alt="Responsive Design" style="cursor:zoom-in; margin-left: .25rem"/></a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="profileP2">
+                        Responsive design. The term coined for a website that looks great on a Samsung Galaxy S8, an Apple iPad, a 15” laptop, and
+                        everything else in between. In August of 2011, Twitter made my life a whole easier, by creating a
+                        framework called <a class="click" href="https://www.bootstrapcdn.com/">Bootstrap.</a>                        If you look at the image to the right, you’ll see that it’s the same web page as the one in the “Getting
+                        Started” section. However, the greeting is rearranged to accommodate a smaller screen size, and also
+                        the menu changes to be more intuitive for a mobile device. If you would care to see this in action,
+                        and you’re browsing on a laptop or desktop, resize your web browser. All of the content will shift
+                        so that it is easier to view.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h3 class="portfolioH3">The Product Page</h3>
+                <a class="gallery-item" data-toggle="modal" data-target="#productModal">
+                <img src="./img/screenshots/apparel.png" alt="post img" title="Enlarge" class="pull-left img-responsive thumb margin10 img-thumbnail" style="cursor:zoom-in; margin-right: .25rem"></a>
+                <div>
+                    <p class="subP2"> <strong> A Quick Note: </strong> I try my best to blog about coding in a simplistic, easy to understand
+                        manner, but this section gets pretty nerdy. Feel free to skip it.</p>
+                    <p class="profileP2">
+                        It's no secret that I love <a href="https://angularjs.org/">AngularJS.</a> The two-way binding with
+                        ng-model is crazy useful, and that with the built in ngResource model and $resource factory for RESTful
+                        service calls is a thing of absolute beauty. Another great feature is ngRepeat. I hate cluttered
+                        files, and even more so, I hate repeating myself. ngRepeat gives me the ability to write code for
+                        only one item, it uses that code as a template, and then it automatically repeats the information
+                        that's stored in my database and updates as a new item! And then theres's <a id="click" href="https://ui-router.github.io">UI-Router</a>,
+                        I found that I could have multiple views on one page, all with different controllers, it was a game
+                        changer. For example, the page you're viewing right now, is actually <strong>four</strong> .html
+                        files on one! Angular is Awesome! Thanks Google!
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h3 class="portfolioH3"> The Cart </h3>
+                <a class="gallery-item" data-toggle="modal" data-target="#cartModal">
+                <img src="./img/screenshots/checkout.png" alt="post img" title="Enlarge" class="pull-right img-responsive
+                            thumb margin10 img-thumbnail" style="cursor:zoom-in; margin-left: .25rem"></a>
+                <div>
+                    <p class="profileP2">
+                        If you're reading this and are either in Covalence or thinking of attending Covalence, this is one of the most important
+                        things to remember: If it has be done, somebody has written about it and posted a tutorial on the
+                        web. Every single group said something similar- "I don't think this online store is going to be that
+                        difficult! It's not too much different than the blog we built!" And normally, you would be right.
+                        But this is Covalence <strong>Boot Camp</strong> and the fastest way to learn
+                        how to swim is to jump in the deep end. I found a great tutorial that solved the problem called
+                        <a id="click" href="https://github.com/snapjay/ngCart">ngCart.</a> We were able to implement the
+                        code for cart that we found with SendGrid and Stripe API</p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h3 class="portBtmH3">This Project was Built With </h3>
+                <img class="icon" src="./img/badges/html5-css3.png" alt="html5/css3">
+                <img class="icon" src="./img/badges/AngularJS-Shield.svg" alt="angular">
+                <img class="icon" src="./img/badges/bootstrap.png" alt="bootstrap">
+                <img class="icon" src="./img/badges/node.png" alt="nodejs">
+                <img class="icon" src="./img/badges/mysql.png" alt="mysql">
+            </div>
+            <p class="profileP"> </p>
+        </div>
+        <div class="col-sm-12 gap10"></div>
+    </div>
+    <div class="col-sm-12 gap10"></div>
+</div>
+
+
+
+<!-- GETTING STARTED MODAL -->
+<div id="startModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!--Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">All Said and Done!</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-center">
+                    <img class="img-responsive" src="./img/screenshots/storefront.png" style="border-radius: 10px" />
+                    <br>
+
+                    <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- IMG MODAL -->
+<div id="resdesModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!--Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">Responsive Design</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-center">
+                    <img class="img-responsive" src="./img/screenshots/responsive.png" style="border-radius: 10px; margin-left: auto; margin-right: auto;"
+                    />
+                    <br>
+
+                    <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- GETTING PRODUCT MODAL -->
+<div id="productModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!--Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">The Product Page</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-center">
+                    <img class="img-responsive" src="./img/screenshots/apparel.png" style="border-radius: 10px" />
+                    <br>
+
+                    <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  CART MODAL -->
+<div id="cartModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+
+        <!--Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">The Checkout Page</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-center">
+                    <img class="img-responsive" src="./img/screenshots/checkout.png" style="border-radius: 10px" />
+                    <br>
+
+                    <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

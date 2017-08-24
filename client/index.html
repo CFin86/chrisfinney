@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="finney">
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="fragment" content="!"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  
+  <link rel="shortcut icon" href="./img/badges/cfIcon.png" type="image/x-icon"/>
+ 
+  <title>{{ seo.title }}</title>
+  <meta property="og:title" content="{{ seo.title }}">
+  <meta property="twitter:title" content="{{seo.title}}">
+  <meta property="og:image" content="{{ seo.image }}">
+  <meta property="twitter:image" content="{{seo.image}}">
+  <meta property="og:url" content="{{ seo.url }}">
+  <meta property="twitter:url" content="{{ seo.url }}">
+  <meta property="description" content="{{ seo.description }}">
+  <meta property="og:description" content="{{ seo.description }}">
+  <meta property="twitter:description" content="{{ seo.description }}">
+  <!--bootstrap, css stylesheets,-->
+
+  <link rel="stylesheet" href="./stylesheets/style.css" type="text/css" />
+  <link href="./stylesheets/bootstrap-social.css" rel="stylesheet" />
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"/>
+  <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous" />
+    <script src="https://use.fontawesome.com/d1988935dc.js"></script>
+    <link href="./stylesheets/bootstrap-social.css" rel="stylesheet" />
+    
+    
+</head>
+
+<body>
+
+
+
+  <div ui-view="header"></div>
+  <div ui-view="content"></div>
+  <div ui-view="footer"></div>
+ 
+  <!--angular scripts-->
+  <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular-resource.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+  <script src="./app.js"></script>
+
+  <!--Controllers-->
+  <script src="/js/controllers/welcome.ctrl.js"></script>
+  <script src="./js/controllers/navbar.ctrl.js"></script>
+  <script src="./js/controllers/blog.ctrl.js"></script>
+<!-- Services -->
+<script src="./js/service/service.js"></script>
+<!-- Factories -->
+<script src="./js/factories/factories.js"></script>
+</body>
+
+</html>
