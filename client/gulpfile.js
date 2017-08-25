@@ -41,7 +41,7 @@ gulp.start('usemin', 'scripts', 'imagemin');
 });
 
 gulp.task('minifycss', function() {
-    return gulp.src('stylesheets/**/*.css')
+    return gulp.src('./stylesheets/**/*.css')
       .pipe(cleanCSS({compatibility: 'ie8'}))
       .pipe(rename('style.min.css')
       .pipe(gulp.dest('dist')));
@@ -77,7 +77,7 @@ return del([imgDest]), gulp.src(imgFiles)
 // Watch
 gulp.task('watch', ['browser-sync'], function() {
 // Watch .js files
-gulp.watch('{../my site/client/**/*.js,../my site/client/stylesheets/**/*.css,../client/views/**/*.html}', ['usemin']);
+gulp.watch('{../my site/client/**/*.js,../my \site/client/stylesheets/**/*.css,../client/views/**/*.html}', ['usemin']);
     // Watch image files
 gulp.watch('../client/img/**/*', ['imagemin']);
 

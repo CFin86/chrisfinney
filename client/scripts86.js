@@ -204,11 +204,6 @@ angular.module('finney.services', [])
             }
         }
     }]);
-angular.module("finney.factories", ["ngResource"])
-
-    .factory("static", ["$resource", function ($resource) {
-        return $resource("http://localhost:3000/api/static/");
-    }])
 app.controller('BlogController', ["$scope", function ($scope) {
     $(function(){
         $("#switch-view").click(function(){
@@ -295,6 +290,11 @@ function moveToSelected(element) {
 	});
 }
 ]);
+angular.module("finney.factories", ["ngResource"])
+
+    .factory("static", ["$resource", function ($resource) {
+        return $resource("http://localhost:3000/api/static/");
+    }])
 angular.module('finney.services', [])
     .constant("baseURL", "http://localhost:3000/")
 
