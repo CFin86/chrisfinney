@@ -2,7 +2,8 @@ var app = angular.module("finney", ["ui.router", "ngResource", "finney.services"
 
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
-
+    $locationProvider.hashPrefix('!');
+    
     $stateProvider
         .state('welcome', {
             url: '/',

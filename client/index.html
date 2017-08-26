@@ -10,16 +10,16 @@
   
   <link rel="shortcut icon" href="./img/badges/cfIcon.png" type="image/x-icon"/>
  
-  <title>{{ seo.title }}</title>
-  <meta property="og:title" content="{{ seo.title }}">
+  <title>Chris Finney: Full Stack Web Development | {{seo.title}}</title>
+  <meta property="og:title" content="{{seo.title}}">
   <meta property="twitter:title" content="{{seo.title}}">
-  <meta property="og:image" content="{{ seo.image }}">
+  <meta property="og:image" content="/img/pictures/Headshot.jpg">
   <meta property="twitter:image" content="{{seo.image}}">
-  <meta property="og:url" content="{{ seo.url }}">
-  <meta property="twitter:url" content="{{ seo.url }}">
-  <meta property="description" content="{{ seo.description }}">
-  <meta property="og:description" content="{{ seo.description }}">
-  <meta property="twitter:description" content="{{ seo.description }}">
+  <meta property="og:url" content="{{seo.url}}">
+  <meta property="twitter:url" content="{{seo.url}}">
+  <meta property="description" content="A Full Stack Web Developer from Birmingham, AL">
+  <meta property="og:description" content="{{seo.description}}">
+  <meta property="twitter:description" content="{{seo.description}}">
   <!--bootstrap, css stylesheets,-->
  
   <link rel="stylesheet" href="./stylesheets/style.min.css" type="text/css" />
@@ -47,12 +47,21 @@
   <div ui-view="footer"></div>
  
   <!--angular scripts-->
+  <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
   <script src="https://code.angularjs.org/1.6.4/angular.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
   <script src="https://code.angularjs.org/1.6.4/angular-resource.js"></script>
   <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
   <script src="./app.js"></script>
-  <script src="scripts.min.js"></script>
+   <!--Controllers-->
+   <script src="/js/controllers/welcome.ctrl.js"></script>
+   <script src="./js/controllers/navbar.ctrl.js"></script>
+   <script src="./js/controllers/blog.ctrl.js"></script>
+ <!-- Services -->
+ <script src="./js/service/service.js"></script>
+ <!-- Factories -->
+ <script src="./js/factories/factories.js"></script>
+  <!-- <script src="scripts.min.js"></script> -->
 </body>
 
 </html>

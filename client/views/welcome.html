@@ -1,35 +1,50 @@
 <div class="container-fluid text-center">
     <div class="row content">
         <br>
-       
+
         <div class="col-sm-4 sidenav">
             <div ui-view="sidenav"> </div>
         </div>
 
 
         <div class="col-sm-8">
-            <h3 id="title">Recent Projects</h3>
-            <div class="row">
-                <div class="col-xs-6 col-sm-6">
-                    <div class="mix category-a">
-                        <div class="single-portfolio1">
-                            <a class="gallery-item" href="/resume"><img class="img-responsive-a" src="./img/resume.png" alt="resume"/></a>
-                        </div>
-                    </div>
-                    <p class="subTitle">resume</p>
-                </div>
+            <div>
+                <p class="welcomeP">
+                    I am always available for freelancing, consulting, or beer wizardry. Please contact me and send me your questions and inquiries.
+                </p>
+<ul class="list-inline">
+               <li> <a href="mailto:chrisfinney86@gmail.com?"><span class="glyphicon glyphicon-envelope" style="font-size:1.8rem !important; padding-bottom:2px"></span> Chris@chrisfinney.info </a></li>
+               <hr style="width:40%; margin-top:10px; margin-bottom:10px;"> 
+               <p id="SkypeButton_Call_cfin86_1_paraElement" style="font-size:1.8rem; color:#444444">
+                    <a href="skype:cfin86?chat" onclick="SkypeWebControl.SDK.Chat.startChat({ConversationType: 'person', ConversationId: 'cfin86'});">
+                        <div class="skype-button" style="pointer-events: none;">
+                        </div><img src="http://www.skypeassets.com/i/scom/images/skype-buttons/chatbutton_16px.png" alt="Skype chat, instant message"
+                            role="Button" style="border:0;   vertical-align:-2px; font-size:1.8rem"></a></p>
+                    
+</ul>
 
-                <div class="col-xs-6 col-sm-6">
-                    <div class="mix category-a">
-                        <div class="single-portfolio2">
-                            <!-- <a class="gallery-item" href="/portfolio"><img class="img-responsive" src="./img/screenshots/trimr/trimrHome.png"  style="max-height:350px; min-height:350px; width:100%; border-radius: 10px;" alt="portfolio"/></a> -->
-                            <a class="gallery-item" href="/portfolio"><img class="img-responsive-a" src="./img/screenshots/trimr/trimrHome.png"  alt="portfolio"/></a>
+                <h3 id="title">Recent Projects</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="mix category-a">
+                            <div class="single-portfolio1">
+                                <a class="gallery-item" href="/resume"><img class="img-responsive-a" src="./img/resume.png" alt="resume"/></a>
+                            </div>
                         </div>
+                        <p class="subTitle">resume</p>
                     </div>
-                    <p class="subTitle">portfolio</p>
+
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="mix category-a">
+                            <div class="single-portfolio2">
+                                <!-- <a class="gallery-item" href="/portfolio"><img class="img-responsive" src="./img/screenshots/trimr/trimrHome.png"  style="max-height:350px; min-height:350px; width:100%; border-radius: 10px;" alt="portfolio"/></a> -->
+                                <a class="gallery-item" href="/portfolio"><img class="img-responsive-a" src="./img/screenshots/trimr/trimrHome.png"  alt="portfolio"/></a>
+                            </div>
+                        </div>
+                        <p class="subTitle">portfolio</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
     </div>
-    <br>
-</div>
