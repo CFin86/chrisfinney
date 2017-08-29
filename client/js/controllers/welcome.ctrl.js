@@ -1,8 +1,12 @@
 app.controller("WelcomeController", ['$scope',
-        function ($scope) {
+        function ($rootScope,$location,$stateParams, $anchorScroll) {
             $('#nav-icon3').click(function () {
 	    	$(this).toggleClass('open');
-	});
+    });
+    $rootScope.$on('$stateChangeSuccess', function(event, toState){
+        if($stateParams.scrollTo){
+          $location.hash($stateParams.scrollTo);
+          $anchorScroll();
 
 function moveToSelected(element) {
         if (element === "next") {
@@ -59,5 +63,7 @@ function moveToSelected(element) {
 		$('#prev').removeAttr('disabled')
 		moveToSelected('next');
 	});
+}
+    })
 }
 ]);

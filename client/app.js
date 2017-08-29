@@ -1,9 +1,9 @@
-var app = angular.module("finney", ["ui.router", "ngResource", "finney.services", "finney.factories"]);
+var app = angular.module("finney", ["ui.router",  "ngResource", "finney.services", "finney.factories"]);
 
-app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $uiViewScrollProvider) {
     $locationProvider.html5Mode(true);
     $locationProvider.hashPrefix('!');
-    
+    $uiViewScrollProvider.useAnchorScroll();
     $stateProvider
         .state('welcome', {
             url: '/',
@@ -52,7 +52,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 },
                 'content': {
                     templateUrl: 'views/portfolio.html',
-                    controller: 'BlogController'
+                    controller: 'WelcomeController'
                 },
                 'sidenav@portfolio': {
                     templateUrl: 'views/sidenav.html'
