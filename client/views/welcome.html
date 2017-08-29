@@ -1,48 +1,59 @@
+<div class="jumbotron">
+        <div ui-view="sidenav"> </div>
+</div>
 <div class="container-fluid text-center">
     <div class="row content">
         <br>
-
-        <div class="col-sm-4 sidenav">
-            <div ui-view="sidenav"> </div>
-        </div>
-
-
-        <div class="col-sm-8">
+        <div class="col-sm-12">
             <div>
-                <p class="welcomeP">
-                    I am always available for freelancing, consulting, or beer wizardry. Please contact me and send me your questions and inquiries.
-                </p>
-<ul class="list-inline">
-               <li> <a href="mailto:chrisfinney86@gmail.com?"><span class="glyphicon glyphicon-envelope" style="font-size:1.8rem !important; padding-bottom:2px"></span> Chris@chrisfinney.info </a></li>
-               <hr style="width:40%; margin-top:10px; margin-bottom:10px;"> 
-               <p id="SkypeButton_Call_cfin86_1_paraElement" style="font-size:1.8rem; color:#444444">
-                    <a href="skype:cfin86?chat" onclick="SkypeWebControl.SDK.Chat.startChat({ConversationType: 'person', ConversationId: 'cfin86'});">
-                        <div class="skype-button" style="pointer-events: none;">
-                        </div><img src="http://www.skypeassets.com/i/scom/images/skype-buttons/chatbutton_16px.png" alt="Skype chat, instant message"
-                            role="Button" style="border:0;   vertical-align:-2px; font-size:1.8rem"></a></p>
-                    
-</ul>
+              
 
-                <h3 id="title">Recent Projects</h3>
+                <h1 class="main">Recent Projects</h1>
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6">
+                    <div class="col-xs-12 col-sm-6 left">
                         <div class="mix category-a">
                             <div class="single-portfolio1">
-                                <a class="gallery-item" href="/resume"><img class="img-responsive-a" src="./img/resume.png" alt="resume"/></a>
+                                <a class="gallery-item" href="/trimr"><img class="img-responsive a" src="./img/trimrMockUp.png" alt="resume"/></a>
+                                <h2 class="subTitle" id="resume">trimr</h2>
                             </div>
                         </div>
-                        <p class="subTitle">resume</p>
+                        <p class="welcomeP">
+                                    trimr started as final project during the Covalence boot camp. It is Software as a Service, responsive mobile web site built
+                                using Bootstrap and AngularJS. Built in only TEN days it stores information on a MySQL database with Node.js server handling communication.
+                            </p>
                     </div>
 
-                    <div class="col-xs-6 col-sm-6">
+                    <div class="col-xs-12 col-sm-6 right">
                         <div class="mix category-a">
-                            <div class="single-portfolio2">
-                                <!-- <a class="gallery-item" href="/portfolio"><img class="img-responsive" src="./img/screenshots/trimr/trimrHome.png"  style="max-height:350px; min-height:350px; width:100%; border-radius: 10px;" alt="portfolio"/></a> -->
-                                <a class="gallery-item" href="/portfolio"><img class="img-responsive-a" src="./img/screenshots/trimr/trimrHome.png"  alt="portfolio"/></a>
+                            <div class="single-portfolio1">
+                                <a class="gallery-item" href="/covstore"><img class="img-responsive a" src="./img/screenshots/CovStore.png"  alt="portfolio"/></a>
+                                <h2 class="subTitle">Covalence Store</h2>
                             </div>
                         </div>
-                        <p class="subTitle">portfolio</p>
+                        <p class="welcomeP">
+                                Covalence Store was built using all of my previous skills at Covalence. An interactive version will be coming soon!
+                                <br>
+                            </p>
+                            
                     </div>
+                    <br>
+                    <hr>
+                    <h2 class="subTitle" id="hire">Want to hire me for your team?</h2>
+                    <p class="welcomeP2">  <a href="/resume"> My resume may be viewed here</a></p>
+                    <p class="welcomeP2">
+                        I am always available for freelancing, consulting, or beer wizardry. Please contact me and send me your questions and inquiries.
+                    </p>
+                    <ul class="list-inline">
+                        <li> <a href="mailto:chrisfinney86@gmail.com?" style="font-size:2rem !important;"><span class="fa fa-envelope-o" style=" padding-bottom:2px"></span> Chris@chrisfinney.info </a></li>
+                        <hr style="width:40%; margin-top:10px; margin-bottom:0px;">
+                        <p id="SkypeButton_Call_cfin86_1_paraElement">
+                            <a href="skype:cfin86?chat" onclick="SkypeWebControl.SDK.Chat.startChat({ConversationType: 'person', ConversationId: 'cfin86'});">
+                                <div class="skype-button" style="pointer-events: none;">
+                                </div><img src="/img/badges/Skype-256x256.png" alt="Skype chat, instant message"
+                                    role="Button" ></a>
+                        </p>
+    
+                    </ul>
                 </div>
             </div>
         </div>
