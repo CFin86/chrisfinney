@@ -37,7 +37,7 @@ return del(['dist']);
 
 // Default task
 gulp.task('default', ['clean'], function() {
-gulp.start('usemin', 'scripts', 'imagemin');
+gulp.start('usemin', 'scripts');
 });
 
 gulp.task('minifycss', function() {
