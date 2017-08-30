@@ -56,11 +56,11 @@ body {
 }
 
 .navbar-brand {
-    color: #fff!important
+    color: #fff!important;
+    margin-top: 7px;
 }
 
 #header {
-    margin-top: 0px;
     margin-bottom: 0px;
     color: #fff;
     font-size: 1.6rem
@@ -180,7 +180,8 @@ body {
 } */
 
 .navbar-right {
-    font-size: 2rem
+    margin-top: 7px !important;
+    font-size: 1.7rem
 }
 
 .glyphicon {
@@ -423,7 +424,19 @@ h4.title {
     background: -moz-linear-gradient(#b2cccc, #e4ffff);
     background: linear-gradient(#b2cccc, #e4ffff)
 }
-
+.covMain{
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #337ab7;
+    text-shadow: 0 0px 1px #999;
+}
+.profileH2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .17rem
+}
 .profileH3 {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -467,38 +480,72 @@ h4.title {
     font-size: 2rem;
     margin-bottom: .25rem;
     color: #888;
-    text-align: center;
+    text-align: left;
 }
 
 .profileP2>b,
 strong {
+    color: #888 !important;
     font-weight: 900!important
 }
-
-.subP2 {
-    font-size: 1.5rem;
+.storeUl{
+    font-size: 2rem;
     margin-bottom: .25rem;
-    color: #333333
+    color: #888;
+    text-align: left;
 }
-
+.storeUl>b,strong{
+    color: #000000;
+}
+.profileP3 {
+    font-size: 2rem;
+    margin-bottom: .25rem;
+    color: #888;
+    text-align: center;
+}
+.subP2 {
+    font-size: 2rem;
+    margin-bottom: .25rem;
+    color: #888;
+}
+#iphone{
+    height: auto !important;
+    width:15% !important;
+    max-width: 9rem;
+    max-height: 14rem;
+    margin-left: 0rem;
+}
+.close{
+    font-size: 4rem !important;
+}
 #resumeBack {
     background-color: #fff;
     border-radius: 10px;
     padding: .5rem .5rem .5rem .5rem
 }
-
+.gallery-thumb{
+    height: 14rem!important;
+    width: 15rem!important
+}
 .img-thumbnail {
     height: 14rem!important;
     width: 15rem!important
 }
-
+.pull-left{
+    margin: .4rem 1.7rem .3rem 0rem;
+}
+.pull-right{
+    margin: .4rem 0rem .3rem 1.7rem;
+}
 .portfolioH3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-top: 1.5rem;
     margin-bottom: .17rem
 }
-
+.modal-title{
+    padding-top: 10px;
+}
 .modalImg {
     border-radius: 10px;
     padding-bottom: 5px
@@ -551,6 +598,7 @@ strong {
   #header {
       font-size: 1.7rem
   }
+  
   .nav.nav-pills.inline{
   display: inline-block;
   position: relative;
@@ -681,6 +729,12 @@ strong {
     text-shadow: 0 1px 1px #999999;
     font-size: 2.5rem
 }
+#iphone{
+    height: auto !important;
+    width: 30% !important;
+    margin-left: .45rem;
+    margin-bottom: 0rem;
+}
 
 #resume{
   margin-top: 0px;
@@ -749,6 +803,16 @@ h4.title {
  background: -moz-linear-gradient(#e6e6e6, #ffffff);
  background: linear-gradient(#e6e6e6, #ffffff); 
   position: relative;
+}
+.img-thumbnail {
+    height: 10rem!important;
+    width: 15rem!important;
+}
+.pull-left{
+    margin: .4rem .65rem .5rem .5rem;
+}
+.pull-right{
+    margin: .4rem .5rem .5rem .65rem;
 }
     .col-sm-8.mobile {
         padding: 0
