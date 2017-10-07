@@ -99,28 +99,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $uiV
                     templateUrl: 'views/footer.html'
                 }
             }
-        })
-        .state('blog', {
-            url: '/blog',
-            views: {
-                'header': {
-                    templateUrl: 'views/mainHeader.html',
-                    controller: 'NavbarController'
-                },
-                'content': {
-                    templateUrl: 'views/blog.html',
-                    controller: 'BlogController'
-                },
-                'sidenav@blog': {
-                    templateUrl: 'views/sidenav.html'
-                },
-                'stage@blog': {
-                    templateUrl: 'views/sidenav.html'
-                },
-                'footer': {
-                    templateUrl: 'views/footer.html'
-                }
-            }
         });
     $urlRouterProvider.otherwise('/');
 });
