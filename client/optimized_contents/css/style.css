@@ -23,7 +23,7 @@ body {
 }
 
 .nav.navbar-nav li a {
-    color: #fff
+    color: #fff !important;
 }
 
 .welcomeP {
@@ -60,7 +60,9 @@ body {
     color: #fff!important;
     margin-top: 7px;
 }
-
+.navbar-inverse{
+    border-color: #337ab7 !important;
+}
 #header {
     margin-bottom: 0px;
     color: #fff;
@@ -103,9 +105,11 @@ body {
     border-top: #95011c
 }
 
-,
+#navbarContainer{
+    background-color: #337ab7;
+}
 .navbar-inverse .navbar-collapse {
-    border-bottom: #95011c
+    /* border-bottom: #95011c */
 }
 
 .hamburger .line {
@@ -169,6 +173,7 @@ body {
 }
 
 .img-responsive.a {
+    min-height: 272px;
     height: auto;
     width: 100%;
     display: inline-block;
