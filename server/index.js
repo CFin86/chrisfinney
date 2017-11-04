@@ -13,11 +13,11 @@ app.use(morgan('dev'));
 app.use('/static', express.static(path.join(__dirname, '../client')))
 
 var api = require('./api');
-// var prerender = require('prerender-node');
+var prerender = require('prerender-node');
 
-// prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
-// prerender.set('prerenderToken', 'Y2lj08lEV2mHIMOnxu');
-// app.use(require('prerender-node').set('prerenderToken', 'Y2ljUX08lEV2mHIMOnxu'));
+prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
+prerender.set('prerenderToken', 'Y2lj08lEV2mHIMOnxu');
+app.use(require('prerender-node').set('prerenderToken', 'Y2ljUX08lEV2mHIMOnxu'));
 
 app.use(express.static(clientPath));
 app.use(bodyParser.json());
@@ -25,33 +25,33 @@ app.use(bodyParser.json());
 app.use(require('prerender-node').set('prerenderToken', 'Y2ljUX08lEV2mHIMOnxu'));
 app.use('/api', api);
 
-// for live server
-var liveServer = require("live-server");
-var params = {
-	port: 3000, // Set the server port. Defaults to 3000.
-	host: "localhost", // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.
-	root: "/Volumes/Internal External HD/My portfolio/my site/client/", // Set root directory that's being served. Defaults to cwd.
-	open: false, // When false, it won't load your browser by default.
-	ignore: 'scss,my/templates', // comma-separated string for paths to ignore
-	file: "index.html", // When set, serve this file for every 404 (useful for single-page applications)
-	wait: 500, // Waits for all changes, before reloading. Defaults to 0 sec.
-	mount: [
-		['/components', './node_modules']
-	], // Mount a directory to a route.
-	logLevel: 2, // 0 = errors only, 1 = some, 2 = lots
-	middleware: [function (req, res, next) {
-		next();
-	}] // Takes an array of Connect-compatible middleware that are injected into the server middleware stack
-};
-app.get('*', function (req, res) {
-	res.sendFile('./client/index.html');
-});
-liveServer.start(params);
-
-//end live server
-
+// // for live server
+// var liveServer = require("live-server");
+// var params = {
+// 	port: 3000, // Set the server port. Defaults to 3000.
+// 	host: "localhost", // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.
+// 	root: "/Volumes/Internal External HD/My portfolio/my site/client/", // Set root directory that's being served. Defaults to cwd.
+// 	open: false, // When false, it won't load your browser by default.
+// 	ignore: 'scss,my/templates', // comma-separated string for paths to ignore
+// 	file: "index.html", // When set, serve this file for every 404 (useful for single-page applications)
+// 	wait: 500, // Waits for all changes, before reloading. Defaults to 0 sec.
+// 	mount: [
+// 		['/components', './node_modules']
+// 	], // Mount a directory to a route.
+// 	logLevel: 2, // 0 = errors only, 1 = some, 2 = lots
+// 	middleware: [function (req, res, next) {
+// 		next();
+// 	}] // Takes an array of Connect-compatible middleware that are injected into the server middleware stack
+// };
 // app.get('*', function (req, res) {
 // 	res.sendFile('./client/index.html');
 // });
-// // app.listen(3000);
-// app.listen(process.env.PORT || 3000);
+// liveServer.start(params);
+
+// //end live server
+
+app.get('*', function (req, res) {
+	res.sendFile('./client/index.html');
+});
+// app.listen(3000);
+app.listen(process.env.PORT || 3000);
